@@ -6,18 +6,29 @@
    ============================================================ */
 
 :root {
-  /* Colors — Workbook palette */
+  /* Colors — Natural palette */
   --green:          #2B3D2F;
   --green-deep:     #1A2B1E;
   --green-light:    #3D5A42;
+  --green-sage:     #7A9B76;
+  --green-mint:     #A8C5A0;
   --gold:           #B8953F;
   --gold-light:     #D4B161;
   --gold-muted:     #C9A95A;
+  --gold-warm:      #E8C97A;
+  --terracotta:     #C47B5A;
+  --terracotta-light: #D4956E;
+  --earth:          #8B6F47;
+  --earth-light:    #A68B5B;
+  --plum:           #6B4C5A;
+  --sky:            #7A9BB5;
   --cream:          #FAF8F4;
   --cream-warm:     #F5F0E8;
+  --cream-rose:     #F8F0EC;
+  --cream-sage:     #EFF5ED;
   --white:          #FFFFFF;
   --text:           #2A2A2A;
-  --text-secondary: #6B6B6B;
+  --text-secondary: #5A5A5A;
   --text-light:     #9A9A9A;
   --border:         #C9B88C;
   --border-light:   #E0D5C0;
@@ -106,13 +117,16 @@ em {
 }
 
 .btn-primary {
-  background: var(--green);
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-light) 100%);
   color: var(--cream);
   border-color: var(--green);
+  box-shadow: 0 2px 12px rgba(43, 61, 47, 0.2);
 }
 .btn-primary:hover {
-  background: var(--green-deep);
+  background: linear-gradient(135deg, var(--green-deep) 0%, var(--green) 100%);
   border-color: var(--green-deep);
+  box-shadow: 0 4px 20px rgba(43, 61, 47, 0.3);
+  transform: translateY(-1px);
 }
 
 .btn-ghost {
@@ -244,7 +258,7 @@ em {
   justify-content: center;
   text-align: center;
   padding: var(--space-2xl) var(--space-md);
-  background: var(--cream);
+  background: linear-gradient(170deg, var(--cream) 0%, var(--cream-sage) 40%, var(--cream-warm) 100%);
   position: relative;
 }
 
@@ -320,8 +334,10 @@ em {
 
 .section-cta {
   padding: var(--space-2xl) 0;
-  background: var(--cream-warm);
+  background: linear-gradient(160deg, var(--cream-warm) 0%, var(--cream-rose) 50%, var(--cream-sage) 100%);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .section-eyebrow {
@@ -362,16 +378,24 @@ em {
 .philosophy-card {
   text-align: center;
   padding: var(--space-md) var(--space-sm);
+  border-radius: 4px;
+  transition: all var(--transition);
 }
+.philosophy-card:nth-child(1) { background: linear-gradient(180deg, rgba(122,155,118,0.08) 0%, transparent 100%); }
+.philosophy-card:nth-child(2) { background: linear-gradient(180deg, rgba(184,149,63,0.08) 0%, transparent 100%); }
+.philosophy-card:nth-child(3) { background: linear-gradient(180deg, rgba(196,123,90,0.08) 0%, transparent 100%); }
+.philosophy-card:hover { transform: translateY(-4px); }
 
 .philosophy-number {
   font-family: var(--font-serif);
   font-size: var(--size-lg);
   font-weight: 400;
-  color: var(--gold);
   margin-bottom: var(--space-sm);
   letter-spacing: 0.1em;
 }
+.philosophy-card:nth-child(1) .philosophy-number { color: var(--green-sage); }
+.philosophy-card:nth-child(2) .philosophy-number { color: var(--gold); }
+.philosophy-card:nth-child(3) .philosophy-number { color: var(--terracotta); }
 
 .philosophy-title {
   font-size: var(--size-xl);
@@ -412,7 +436,10 @@ em {
   font-size: var(--size-xl);
   font-weight: 400;
   font-style: italic;
-  color: var(--green);
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-sage) 50%, var(--earth) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1.5;
   margin-bottom: var(--space-md);
 }
@@ -453,9 +480,11 @@ em {
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gold);
   margin-bottom: var(--space-sm);
 }
+.step:nth-child(1) .step-week { color: var(--green-sage); }
+.step:nth-child(2) .step-week { color: var(--terracotta); }
+.step:nth-child(3) .step-week { color: var(--earth); }
 
 .step-title {
   font-size: var(--size-2xl);
@@ -500,9 +529,18 @@ em {
 .feature {
   text-align: center;
   padding: var(--space-md);
-  border: 1px solid rgba(184, 149, 63, 0.2);
-  border-radius: var(--radius);
+  border: 1px solid rgba(184, 149, 63, 0.15);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.03);
+  transition: all var(--transition);
 }
+.feature:hover {
+  border-color: rgba(184, 149, 63, 0.4);
+  background: rgba(255,255,255,0.06);
+}
+.feature:nth-child(1) { border-top: 2px solid var(--green-sage); }
+.feature:nth-child(2) { border-top: 2px solid var(--gold-warm); }
+.feature:nth-child(3) { border-top: 2px solid var(--terracotta-light); }
 
 .feature-label {
   font-family: var(--font-sans);
