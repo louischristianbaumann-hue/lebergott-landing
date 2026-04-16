@@ -131,12 +131,12 @@ em {
 
 .btn-ghost {
   background: transparent;
-  color: var(--green);
-  border-color: var(--border);
+  color: var(--cream);
+  border-color: rgba(250, 248, 244, 0.4);
 }
 .btn-ghost:hover {
-  border-color: var(--green);
-  background: rgba(43, 61, 47, 0.04);
+  border-color: var(--cream);
+  background: rgba(250, 248, 244, 0.1);
 }
 
 .btn-nav {
@@ -258,7 +258,8 @@ em {
   justify-content: center;
   text-align: center;
   padding: var(--space-2xl) var(--space-md);
-  background: linear-gradient(170deg, var(--cream) 0%, var(--cream-sage) 40%, var(--cream-warm) 100%);
+  background: linear-gradient(170deg, rgba(26,43,30,0.7) 0%, rgba(43,61,47,0.6) 50%, rgba(26,43,30,0.8) 100%),
+              url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1920&q=80') center/cover no-repeat;
   position: relative;
 }
 
@@ -272,37 +273,32 @@ em {
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-light);
   margin-bottom: var(--space-md);
 }
 
 .hero-heading {
   font-size: var(--size-3xl);
   font-weight: 700;
-  color: var(--green-deep);
+  color: var(--cream);
   letter-spacing: -0.02em;
   margin-bottom: var(--space-md);
 }
 
-.hero-rule {
-  width: 80px;
-  height: 1px;
-  background: var(--gold);
-  margin: 0 auto var(--space-md);
-}
+/* hero-rule styles consolidated below with section dividers */
 
 .hero-subtitle {
   font-family: var(--font-serif);
   font-size: var(--size-lg);
   font-weight: 400;
-  color: var(--green-light);
+  color: rgba(250, 248, 244, 0.85);
   line-height: 1.6;
   margin-bottom: var(--space-md);
 }
 
 .hero-body {
   font-size: var(--size-base);
-  color: var(--text-secondary);
+  color: rgba(250, 248, 244, 0.7);
   max-width: 520px;
   margin: 0 auto var(--space-lg);
   line-height: 1.8;
@@ -328,13 +324,15 @@ em {
 
 .section-dark {
   padding: var(--space-2xl) 0;
-  background: var(--green-deep);
+  background: linear-gradient(170deg, rgba(26,43,30,0.88) 0%, rgba(43,61,47,0.85) 50%, rgba(26,43,30,0.92) 100%),
+              url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80') center/cover no-repeat;
   color: var(--cream);
 }
 
 .section-cta {
   padding: var(--space-2xl) 0;
-  background: linear-gradient(160deg, var(--cream-warm) 0%, var(--cream-rose) 50%, var(--cream-sage) 100%);
+  background: linear-gradient(160deg, rgba(245,240,232,0.88) 0%, rgba(248,240,236,0.85) 50%, rgba(239,245,237,0.88) 100%),
+              url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1920&q=80') center/cover no-repeat;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -683,41 +681,7 @@ em {
 .feature:nth-child(2) { transition-delay: 0.1s; }
 .feature:nth-child(3) { transition-delay: 0.2s; }
 
-/* --- Leaf Backgrounds ------------------------------------- */
-.leaf-bg {
-  position: fixed;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.8;
-  transition: transform 20s ease-in-out;
-}
-.leaf-1 { top: 3%; left: -1%; width: 180px; transform: rotate(-12deg); }
-.leaf-2 { top: 30%; right: -2%; width: 160px; transform: rotate(18deg) scaleX(-1); }
-.leaf-3 { bottom: 20%; left: 1%; width: 120px; transform: rotate(-30deg); }
-.leaf-4 { bottom: 5%; right: 3%; width: 140px; transform: rotate(25deg); }
-
-@media (max-width: 768px) {
-  .leaf-bg { opacity: 0.5; }
-  .leaf-1 { width: 120px; }
-  .leaf-2 { width: 100px; }
-  .leaf-3, .leaf-4 { display: none; }
-}
-
-.hero-leaf-left,
-.hero-leaf-right {
-  position: absolute;
-  width: 200px;
-  color: var(--green);
-  pointer-events: none;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.hero-leaf-left { left: 3%; width: 240px; }
-.hero-leaf-right { right: 3%; width: 240px; transform: translateY(-50%) scaleX(-1); }
-
-@media (max-width: 1200px) {
-  .hero-leaf-left, .hero-leaf-right { display: none; }
-}
+/* --- (Leaf backgrounds removed — replaced by photo backgrounds) --- */
 
 /* --- Section Waves --------------------------------------- */
 .section-wave {
@@ -743,49 +707,13 @@ em {
 .hero-rule {
   text-align: center;
   margin: 0 auto var(--space-md);
-  color: var(--gold);
+  color: var(--gold-light);
 }
 .hero-rule svg { width: 120px; height: 12px; }
 
-/* --- Card Leaf Accents ----------------------------------- */
-.card-leaf {
-  position: absolute;
-  top: -10px;
-  right: -5px;
-  width: 40px;
-  height: 60px;
-  color: var(--green);
-  pointer-events: none;
-}
-
+/* --- (Leaf accents removed — replaced by photo backgrounds) --- */
 .philosophy-card { position: relative; }
-
-/* --- Feature Leaves -------------------------------------- */
-.feature-leaf {
-  margin-bottom: var(--space-xs);
-  color: var(--gold-light);
-}
-.feature-leaf svg { width: 24px; height: 36px; margin: 0 auto; display: block; }
-
-/* --- Quote Leaf ------------------------------------------ */
-.quote-leaf {
-  position: absolute;
-  right: -40px;
-  top: -20px;
-  color: var(--green);
-  pointer-events: none;
-}
 .quote-figure { position: relative; }
-
-/* --- CTA Leaf -------------------------------------------- */
-.cta-leaf {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  color: var(--green);
-}
 .cta-inner { position: relative; z-index: 1; }
 
 /* --- Section Cream --------------------------------------- */
@@ -794,21 +722,7 @@ em {
   background: var(--cream);
 }
 
-/* --- Nav Leaf -------------------------------------------- */
-.nav-leaf {
-  width: 20px;
-  height: 20px;
-  color: var(--green);
-  margin-right: 6px;
-  vertical-align: middle;
-}
-
-.btn-leaf {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
-  vertical-align: middle;
-}
+/* --- (Nav leaf + btn leaf removed) --- */
 
 /* --- Selection -------------------------------------------- */
 ::selection {

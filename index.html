@@ -9,84 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1920&q=80">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Realistic botanical leaves (decorative) -->
-  <div class="leaf-bg leaf-1" aria-hidden="true">
-    <svg viewBox="0 0 180 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Realistic leaf shape with serrated edge -->
-      <path d="M90 8C85 25 55 55 38 85C22 115 15 150 14 175C13 200 18 230 28 255C38 275 55 295 75 308C80 311 85 313 90 314C95 313 100 311 105 308C125 295 142 275 152 255C162 230 167 200 166 175C165 150 158 115 142 85C125 55 95 25 90 8Z" fill="#4A7C59" opacity="0.12"/>
-      <!-- Main vein -->
-      <path d="M90 12V310" stroke="#3D6B4A" stroke-width="1.2" opacity="0.18"/>
-      <!-- Secondary veins (left) -->
-      <path d="M90 50C75 62 58 78 45 98" stroke="#3D6B4A" stroke-width="0.7" opacity="0.12" fill="none"/>
-      <path d="M90 90C72 105 52 125 38 150" stroke="#3D6B4A" stroke-width="0.7" opacity="0.11" fill="none"/>
-      <path d="M90 130C70 148 48 172 32 200" stroke="#3D6B4A" stroke-width="0.6" opacity="0.10" fill="none"/>
-      <path d="M90 170C72 188 52 212 38 238" stroke="#3D6B4A" stroke-width="0.5" opacity="0.09" fill="none"/>
-      <path d="M90 210C75 225 58 245 48 265" stroke="#3D6B4A" stroke-width="0.4" opacity="0.08" fill="none"/>
-      <!-- Secondary veins (right) -->
-      <path d="M90 50C105 62 122 78 135 98" stroke="#3D6B4A" stroke-width="0.7" opacity="0.12" fill="none"/>
-      <path d="M90 90C108 105 128 125 142 150" stroke="#3D6B4A" stroke-width="0.7" opacity="0.11" fill="none"/>
-      <path d="M90 130C110 148 132 172 148 200" stroke="#3D6B4A" stroke-width="0.6" opacity="0.10" fill="none"/>
-      <path d="M90 170C108 188 128 212 142 238" stroke="#3D6B4A" stroke-width="0.5" opacity="0.09" fill="none"/>
-      <path d="M90 210C105 225 122 245 132 265" stroke="#3D6B4A" stroke-width="0.4" opacity="0.08" fill="none"/>
-      <!-- Tertiary veins (fine detail) -->
-      <path d="M78 65C70 72 62 82 56 92" stroke="#3D6B4A" stroke-width="0.3" opacity="0.07" fill="none"/>
-      <path d="M102 65C110 72 118 82 124 92" stroke="#3D6B4A" stroke-width="0.3" opacity="0.07" fill="none"/>
-      <path d="M75 110C65 120 55 135 48 148" stroke="#3D6B4A" stroke-width="0.3" opacity="0.06" fill="none"/>
-      <path d="M105 110C115 120 125 135 132 148" stroke="#3D6B4A" stroke-width="0.3" opacity="0.06" fill="none"/>
-    </svg>
-  </div>
-  <div class="leaf-bg leaf-2" aria-hidden="true">
-    <svg viewBox="0 0 160 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Rounder, softer leaf -->
-      <path d="M80 10C72 35 40 65 25 100C12 132 8 168 10 198C12 228 22 258 40 275C52 286 66 292 80 294C94 292 108 286 120 275C138 258 148 228 150 198C152 168 148 132 135 100C120 65 88 35 80 10Z" fill="#5C8A4D" opacity="0.08"/>
-      <path d="M80 14V290" stroke="#4A7040" stroke-width="1" opacity="0.12"/>
-      <path d="M80 55C62 72 42 95 28 125" stroke="#4A7040" stroke-width="0.6" opacity="0.09" fill="none"/>
-      <path d="M80 55C98 72 118 95 132 125" stroke="#4A7040" stroke-width="0.6" opacity="0.09" fill="none"/>
-      <path d="M80 110C60 130 38 158 22 192" stroke="#4A7040" stroke-width="0.5" opacity="0.08" fill="none"/>
-      <path d="M80 110C100 130 122 158 138 192" stroke="#4A7040" stroke-width="0.5" opacity="0.08" fill="none"/>
-      <path d="M80 170C65 185 45 210 35 240" stroke="#4A7040" stroke-width="0.4" opacity="0.07" fill="none"/>
-      <path d="M80 170C95 185 115 210 125 240" stroke="#4A7040" stroke-width="0.4" opacity="0.07" fill="none"/>
-    </svg>
-  </div>
-  <div class="leaf-bg leaf-3" aria-hidden="true">
-    <svg viewBox="0 0 120 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Narrow elegant leaf -->
-      <path d="M60 5C56 22 38 48 28 78C18 108 14 140 16 165C18 190 25 210 38 222C45 228 52 232 60 233C68 232 75 228 82 222C95 210 102 190 104 165C106 140 102 108 92 78C82 48 64 22 60 5Z" fill="#6B8F5E" opacity="0.07"/>
-      <path d="M60 8V230" stroke="#5A7D4D" stroke-width="0.8" opacity="0.10"/>
-      <path d="M60 40C48 55 35 75 26 100" stroke="#5A7D4D" stroke-width="0.5" opacity="0.08" fill="none"/>
-      <path d="M60 40C72 55 85 75 94 100" stroke="#5A7D4D" stroke-width="0.5" opacity="0.08" fill="none"/>
-      <path d="M60 85C46 102 32 128 24 155" stroke="#5A7D4D" stroke-width="0.4" opacity="0.07" fill="none"/>
-      <path d="M60 85C74 102 88 128 96 155" stroke="#5A7D4D" stroke-width="0.4" opacity="0.07" fill="none"/>
-      <path d="M60 135C50 150 40 172 35 195" stroke="#5A7D4D" stroke-width="0.3" opacity="0.06" fill="none"/>
-      <path d="M60 135C70 150 80 172 85 195" stroke="#5A7D4A" stroke-width="0.3" opacity="0.06" fill="none"/>
-    </svg>
-  </div>
-  <!-- Extra floating leaf -->
-  <div class="leaf-bg leaf-4" aria-hidden="true">
-    <svg viewBox="0 0 140 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M70 8C65 28 42 58 28 92C16 122 12 155 14 182C16 208 24 230 42 245C50 252 60 256 70 257C80 256 90 252 98 245C116 230 124 208 126 182C128 155 124 122 112 92C98 58 75 28 70 8Z" fill="#7A9B76" opacity="0.06"/>
-      <path d="M70 12V254" stroke="#6B8C68" stroke-width="0.8" opacity="0.08"/>
-      <path d="M70 50C55 68 38 92 26 122" stroke="#6B8C68" stroke-width="0.5" opacity="0.06" fill="none"/>
-      <path d="M70 50C85 68 102 92 114 122" stroke="#6B8C68" stroke-width="0.5" opacity="0.06" fill="none"/>
-      <path d="M70 105C55 125 38 152 28 182" stroke="#6B8C68" stroke-width="0.4" opacity="0.05" fill="none"/>
-      <path d="M70 105C85 125 102 152 112 182" stroke="#6B8C68" stroke-width="0.4" opacity="0.05" fill="none"/>
-    </svg>
-  </div>
 
   <!-- Navigation -->
   <header class="nav-header" role="banner">
     <nav class="nav-inner" aria-label="Hauptnavigation">
       <a href="#" class="nav-logo" aria-label="Lebergott Startseite">
-        <svg class="nav-leaf" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M12 2C12 2 4 8 3 14C2 20 12 22 12 22C12 22 22 20 21 14C20 8 12 2 12 2Z" fill="currentColor" opacity="0.15"/>
-          <path d="M12 2V22" stroke="currentColor" stroke-width="1"/>
-          <path d="M12 8C8 12 5 16 4 18" stroke="currentColor" stroke-width="0.6" fill="none"/>
-          <path d="M12 8C16 12 19 16 20 18" stroke="currentColor" stroke-width="0.6" fill="none"/>
-        </svg>
         <span class="nav-logo-text">Lebergott</span>
       </a>
 
@@ -97,10 +28,7 @@
       </ul>
 
       <a href="https://t.me/LEBERGOTTBOT" class="btn btn-nav" target="_blank" rel="noopener noreferrer">
-        <svg class="btn-leaf" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M8 1C8 1 3 5 2.5 9C2 13 8 15 8 15C8 15 14 13 13.5 9C13 5 8 1 8 1Z" stroke="currentColor" stroke-width="0.8" fill="none"/>
-        </svg>
-        Gespräch beginnen
+        Mit Marcel sprechen
       </a>
 
       <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
@@ -114,7 +42,7 @@
         <li><a href="#philosophie" class="mobile-link">Philosophie</a></li>
         <li><a href="#wege" class="mobile-link">Drei Wege</a></li>
         <li><a href="#begleiter" class="mobile-link">Begleiter</a></li>
-        <li><a href="https://t.me/LEBERGOTTBOT" class="btn btn-accent mobile-cta" target="_blank">Gespräch beginnen</a></li>
+        <li><a href="https://t.me/LEBERGOTTBOT" class="btn btn-accent mobile-cta" target="_blank">Mit Marcel sprechen</a></li>
       </ul>
     </div>
   </header>
@@ -123,32 +51,6 @@
 
     <!-- Hero -->
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-leaf-left" aria-hidden="true">
-        <svg viewBox="0 0 240 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M120 15C112 45 70 90 48 140C28 188 20 240 18 285C16 330 24 370 42 400C58 422 78 438 100 448C107 451 114 453 120 454C126 453 133 451 140 448C162 438 182 422 198 400C216 370 224 330 222 285C220 240 212 188 192 140C170 90 128 45 120 15Z" fill="#4A7C59" opacity="0.06"/>
-          <path d="M120 18V450" stroke="#3D6B4A" stroke-width="1.2" opacity="0.10"/>
-          <path d="M120 60C100 82 75 112 55 150" stroke="#3D6B4A" stroke-width="0.7" opacity="0.08" fill="none"/>
-          <path d="M120 110C95 138 68 175 48 218" stroke="#3D6B4A" stroke-width="0.6" opacity="0.07" fill="none"/>
-          <path d="M120 165C98 192 72 228 52 272" stroke="#3D6B4A" stroke-width="0.5" opacity="0.06" fill="none"/>
-          <path d="M120 220C100 245 78 278 62 318" stroke="#3D6B4A" stroke-width="0.5" opacity="0.05" fill="none"/>
-          <path d="M120 275C105 295 85 322 72 355" stroke="#3D6B4A" stroke-width="0.4" opacity="0.04" fill="none"/>
-          <path d="M108 75C98 85 88 98 80 115" stroke="#3D6B4A" stroke-width="0.3" opacity="0.06" fill="none"/>
-          <path d="M105 140C92 155 78 175 68 198" stroke="#3D6B4A" stroke-width="0.3" opacity="0.05" fill="none"/>
-        </svg>
-      </div>
-      <div class="hero-leaf-right" aria-hidden="true">
-        <svg viewBox="0 0 240 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M120 15C112 45 70 90 48 140C28 188 20 240 18 285C16 330 24 370 42 400C58 422 78 438 100 448C107 451 114 453 120 454C126 453 133 451 140 448C162 438 182 422 198 400C216 370 224 330 222 285C220 240 212 188 192 140C170 90 128 45 120 15Z" fill="#5C8A4D" opacity="0.05"/>
-          <path d="M120 18V450" stroke="#4A7040" stroke-width="1" opacity="0.08"/>
-          <path d="M120 60C140 82 165 112 185 150" stroke="#4A7040" stroke-width="0.7" opacity="0.07" fill="none"/>
-          <path d="M120 110C145 138 172 175 192 218" stroke="#4A7040" stroke-width="0.6" opacity="0.06" fill="none"/>
-          <path d="M120 165C142 192 168 228 188 272" stroke="#4A7040" stroke-width="0.5" opacity="0.05" fill="none"/>
-          <path d="M120 220C140 245 162 278 178 318" stroke="#4A7040" stroke-width="0.5" opacity="0.04" fill="none"/>
-          <path d="M120 275C135 295 155 322 168 355" stroke="#4A7040" stroke-width="0.4" opacity="0.04" fill="none"/>
-          <path d="M132 75C142 85 152 98 160 115" stroke="#4A7040" stroke-width="0.3" opacity="0.05" fill="none"/>
-        </svg>
-      </div>
-
       <div class="container hero-container">
         <div class="hero-eyebrow reveal">Lebergott Akademie</div>
         <h1 id="hero-heading" class="hero-heading reveal">
@@ -165,11 +67,11 @@
           <em>Der Körper verzeiht immer. Er ist niemals nachtragend.<br>Er ist immer auf eurer Seite.</em>
         </p>
         <p class="hero-body reveal">
-          30 Jahre Praxis. 2.000 Funktionen eines Organs.<br>
-          Wissen als deine stärkste Medizin.
+          30 Jahre Praxis. Hunderte Stunden Transkription.<br>
+          Marcels Wissen — jetzt direkt für dich zugänglich.
         </p>
         <div class="hero-actions reveal">
-          <a href="https://t.me/LEBERGOTTBOT" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Gespräch beginnen</a>
+          <a href="https://t.me/LEBERGOTTBOT" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Mit Marcel sprechen</a>
           <a href="#philosophie" class="btn btn-ghost">Mehr erfahren</a>
         </div>
       </div>
@@ -196,9 +98,6 @@
 
         <div class="philosophy-grid">
           <div class="philosophy-card reveal">
-            <div class="card-leaf" aria-hidden="true">
-              <svg viewBox="0 0 40 60" fill="none"><path d="M20 5C20 5 8 18 6 32C4 46 20 55 20 55C20 55 36 46 34 32C32 18 20 5 20 5Z" fill="currentColor" opacity="0.06"/><path d="M20 5V55" stroke="currentColor" stroke-width="0.5" opacity="0.1"/></svg>
-            </div>
             <div class="philosophy-number">I</div>
             <h3 class="philosophy-title">Denken</h3>
             <p class="philosophy-subtitle">Nerven-Sinnes-System</p>
@@ -209,9 +108,6 @@
           </div>
 
           <div class="philosophy-card reveal">
-            <div class="card-leaf" aria-hidden="true">
-              <svg viewBox="0 0 40 60" fill="none"><path d="M20 5C20 5 8 18 6 32C4 46 20 55 20 55C20 55 36 46 34 32C32 18 20 5 20 5Z" fill="currentColor" opacity="0.06"/><path d="M20 5V55" stroke="currentColor" stroke-width="0.5" opacity="0.1"/></svg>
-            </div>
             <div class="philosophy-number">II</div>
             <h3 class="philosophy-title">Fühlen</h3>
             <p class="philosophy-subtitle">Rhythmisches System</p>
@@ -222,9 +118,6 @@
           </div>
 
           <div class="philosophy-card reveal">
-            <div class="card-leaf" aria-hidden="true">
-              <svg viewBox="0 0 40 60" fill="none"><path d="M20 5C20 5 8 18 6 32C4 46 20 55 20 55C20 55 36 46 34 32C32 18 20 5 20 5Z" fill="currentColor" opacity="0.06"/><path d="M20 5V55" stroke="currentColor" stroke-width="0.5" opacity="0.1"/></svg>
-            </div>
             <div class="philosophy-number">III</div>
             <h3 class="philosophy-title">Wollen</h3>
             <p class="philosophy-subtitle">Stoffwechsel-System</p>
@@ -247,9 +140,6 @@
     <section class="section-cream" aria-labelledby="quote-text">
       <div class="container">
         <figure class="quote-figure reveal">
-          <div class="quote-leaf" aria-hidden="true">
-            <svg viewBox="0 0 60 100" fill="none"><path d="M30 5C30 5 10 30 8 55C6 80 30 95 30 95C30 95 54 80 52 55C50 30 30 5 30 5Z" fill="currentColor" opacity="0.05"/><path d="M30 5V95" stroke="currentColor" stroke-width="0.5" opacity="0.08"/></svg>
-          </div>
           <blockquote class="quote-text" id="quote-text">
             „Gesundheit ist nicht die Abwesenheit von Krankheit,
             sondern die Anwesenheit von Vitalität."
@@ -318,7 +208,7 @@
     <section class="section-dark" id="begleiter" aria-labelledby="begleiter-heading">
       <div class="container">
         <div class="section-eyebrow section-eyebrow-light reveal">Dein Begleiter</div>
-        <h2 id="begleiter-heading" class="section-heading section-heading-light reveal">Der digitale Hüter<br>des Körperwissens</h2>
+        <h2 id="begleiter-heading" class="section-heading section-heading-light reveal">Sprich direkt<br>mit Marcel</h2>
         <div class="section-divider section-divider-gold reveal">
           <svg viewBox="0 0 80 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <line x1="0" y1="4" x2="32" y2="4" stroke="currentColor" stroke-width="0.5"/>
@@ -328,32 +218,22 @@
         </div>
 
         <p class="akademie-text reveal">
-          Kein Diagnose-Assistent. Kein Coaching-Bot.<br>
-          Ein Hüter — der Wissen anbietet, Körper-Signale zurückspiegelt
-          und den Raum schützt, in dem deine eigene Gesundheitskompetenz wächst.
+          Kein Bot. Kein Algorithmus.<br>
+          Marcels 30 Jahre Gesundheitswissen — durch hunderte Stunden Transkription und Analyse zugänglich gemacht. Als würdest du direkt mit ihm sprechen.
         </p>
 
         <div class="features-grid reveal">
           <div class="feature">
-            <div class="feature-leaf" aria-hidden="true">
-              <svg viewBox="0 0 24 36" fill="none"><path d="M12 3C12 3 4 11 3 19C2 27 12 33 12 33C12 33 22 27 21 19C20 11 12 3 12 3Z" stroke="currentColor" stroke-width="0.5" opacity="0.3" fill="none"/></svg>
-            </div>
             <div class="feature-label">Wissensbasis</div>
-            <div class="feature-value">44 Konzepte</div>
-            <div class="feature-desc">Aus 4 Kapiteln destilliert</div>
+            <div class="feature-value">Marcels Wissen</div>
+            <div class="feature-desc">30 Jahre destilliert</div>
           </div>
           <div class="feature">
-            <div class="feature-leaf" aria-hidden="true">
-              <svg viewBox="0 0 24 36" fill="none"><path d="M12 3C12 3 4 11 3 19C2 27 12 33 12 33C12 33 22 27 21 19C20 11 12 3 12 3Z" stroke="currentColor" stroke-width="0.5" opacity="0.3" fill="none"/></svg>
-            </div>
             <div class="feature-label">Fundament</div>
             <div class="feature-value">30 Jahre</div>
             <div class="feature-desc">Ganzheitliches Heilwissen</div>
           </div>
           <div class="feature">
-            <div class="feature-leaf" aria-hidden="true">
-              <svg viewBox="0 0 24 36" fill="none"><path d="M12 3C12 3 4 11 3 19C2 27 12 33 12 33C12 33 22 27 21 19C20 11 12 3 12 3Z" stroke="currentColor" stroke-width="0.5" opacity="0.3" fill="none"/></svg>
-            </div>
             <div class="feature-label">Prinzip</div>
             <div class="feature-value">Dein Tempo</div>
             <div class="feature-desc">Ethischer Individualismus</div>
@@ -372,16 +252,6 @@
     <section class="section-cta" aria-labelledby="cta-heading">
       <div class="container">
         <div class="cta-inner reveal">
-          <div class="cta-leaf" aria-hidden="true">
-            <svg viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M150 20C150 20 50 120 40 250C30 380 150 480 150 480C150 480 270 380 260 250C250 120 150 20 150 20Z" fill="currentColor" opacity="0.03"/>
-              <path d="M150 20V480" stroke="currentColor" stroke-width="1" opacity="0.06"/>
-              <path d="M150 100C110 150 80 210 60 280" stroke="currentColor" stroke-width="0.5" opacity="0.04" fill="none"/>
-              <path d="M150 100C190 150 220 210 240 280" stroke="currentColor" stroke-width="0.5" opacity="0.04" fill="none"/>
-              <path d="M150 180C120 210 95 250 80 310" stroke="currentColor" stroke-width="0.4" opacity="0.03" fill="none"/>
-              <path d="M150 180C180 210 205 250 220 310" stroke="currentColor" stroke-width="0.4" opacity="0.03" fill="none"/>
-            </svg>
-          </div>
           <div class="section-eyebrow reveal">Bereit?</div>
           <h2 id="cta-heading" class="cta-heading reveal">
             Was spürt dein Körper<br>in diesem Moment?
@@ -392,7 +262,7 @@
           <p class="cta-text reveal">
             Beginne ein Gespräch mit Lebergott — kostenlos, ohne Registrierung.
           </p>
-          <a href="https://t.me/LEBERGOTTBOT" class="btn btn-primary btn-large reveal" target="_blank" rel="noopener noreferrer">Gespräch beginnen</a>
+          <a href="https://t.me/LEBERGOTTBOT" class="btn btn-primary btn-large reveal" target="_blank" rel="noopener noreferrer">Mit Marcel sprechen</a>
         </div>
       </div>
     </section>
