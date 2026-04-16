@@ -645,6 +645,124 @@ em {
 .feature:nth-child(2) { transition-delay: 0.1s; }
 .feature:nth-child(3) { transition-delay: 0.2s; }
 
+/* --- Leaf Backgrounds ------------------------------------- */
+.leaf-bg {
+  position: fixed;
+  color: var(--green);
+  pointer-events: none;
+  z-index: 0;
+}
+.leaf-1 { top: 5%; left: -2%; width: 120px; transform: rotate(-15deg); }
+.leaf-2 { top: 35%; right: -3%; width: 100px; transform: rotate(20deg); }
+.leaf-3 { bottom: 15%; left: 2%; width: 80px; transform: rotate(-25deg); }
+
+.hero-leaf-left,
+.hero-leaf-right {
+  position: absolute;
+  width: 200px;
+  color: var(--green);
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-leaf-left { left: 2%; }
+.hero-leaf-right { right: 2%; transform: translateY(-50%) scaleX(-1); }
+
+@media (max-width: 1200px) {
+  .hero-leaf-left, .hero-leaf-right { display: none; }
+}
+
+/* --- Section Waves --------------------------------------- */
+.section-wave {
+  position: relative;
+  margin-top: -1px;
+  line-height: 0;
+}
+.section-wave svg {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+/* --- Section Dividers (leaf ornaments) -------------------- */
+.section-divider {
+  text-align: center;
+  margin: 0 auto var(--space-lg);
+  color: var(--gold);
+}
+.section-divider svg { width: 80px; height: 8px; }
+.section-divider-gold { color: var(--gold-light); }
+
+.hero-rule {
+  text-align: center;
+  margin: 0 auto var(--space-md);
+  color: var(--gold);
+}
+.hero-rule svg { width: 120px; height: 12px; }
+
+/* --- Card Leaf Accents ----------------------------------- */
+.card-leaf {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  width: 40px;
+  height: 60px;
+  color: var(--green);
+  pointer-events: none;
+}
+
+.philosophy-card { position: relative; }
+
+/* --- Feature Leaves -------------------------------------- */
+.feature-leaf {
+  margin-bottom: var(--space-xs);
+  color: var(--gold-light);
+}
+.feature-leaf svg { width: 24px; height: 36px; margin: 0 auto; display: block; }
+
+/* --- Quote Leaf ------------------------------------------ */
+.quote-leaf {
+  position: absolute;
+  right: -40px;
+  top: -20px;
+  color: var(--green);
+  pointer-events: none;
+}
+.quote-figure { position: relative; }
+
+/* --- CTA Leaf -------------------------------------------- */
+.cta-leaf {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  color: var(--green);
+}
+.cta-inner { position: relative; z-index: 1; }
+
+/* --- Section Cream --------------------------------------- */
+.section-cream {
+  padding: var(--space-xl) 0;
+  background: var(--cream);
+}
+
+/* --- Nav Leaf -------------------------------------------- */
+.nav-leaf {
+  width: 20px;
+  height: 20px;
+  color: var(--green);
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.btn-leaf {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
 /* --- Selection -------------------------------------------- */
 ::selection {
   background: var(--gold);
