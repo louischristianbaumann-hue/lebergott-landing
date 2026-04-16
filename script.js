@@ -27,8 +27,8 @@
 
   if (navToggle && mobileMenu) {
     navToggle.addEventListener('click', function () {
-      const isOpen = mobileMenu.classList.toggle('open');
-      navToggle.classList.toggle('open', isOpen);
+      const isOpen = mobileMenu.classList.toggle('active');
+      navToggle.classList.toggle('active', isOpen);
       navToggle.setAttribute('aria-expanded', String(isOpen));
       mobileMenu.setAttribute('aria-hidden', String(!isOpen));
       navToggle.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
@@ -37,8 +37,8 @@
     // Close menu when a link inside it is clicked
     mobileMenu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
-        mobileMenu.classList.remove('open');
-        navToggle.classList.remove('open');
+        mobileMenu.classList.remove('active');
+        navToggle.classList.remove('active');
         navToggle.setAttribute('aria-expanded', 'false');
         mobileMenu.setAttribute('aria-hidden', 'true');
         navToggle.setAttribute('aria-label', 'Menü öffnen');
@@ -47,9 +47,9 @@
 
     // Close menu on Escape key
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-        mobileMenu.classList.remove('open');
-        navToggle.classList.remove('open');
+      if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+        mobileMenu.classList.remove('active');
+        navToggle.classList.remove('active');
         navToggle.setAttribute('aria-expanded', 'false');
         mobileMenu.setAttribute('aria-hidden', 'true');
         navToggle.setAttribute('aria-label', 'Menü öffnen');
