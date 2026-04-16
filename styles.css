@@ -686,13 +686,22 @@ em {
 /* --- Leaf Backgrounds ------------------------------------- */
 .leaf-bg {
   position: fixed;
-  color: var(--green);
   pointer-events: none;
   z-index: 0;
+  opacity: 0.8;
+  transition: transform 20s ease-in-out;
 }
-.leaf-1 { top: 5%; left: -2%; width: 120px; transform: rotate(-15deg); }
-.leaf-2 { top: 35%; right: -3%; width: 100px; transform: rotate(20deg); }
-.leaf-3 { bottom: 15%; left: 2%; width: 80px; transform: rotate(-25deg); }
+.leaf-1 { top: 3%; left: -1%; width: 180px; transform: rotate(-12deg); }
+.leaf-2 { top: 30%; right: -2%; width: 160px; transform: rotate(18deg) scaleX(-1); }
+.leaf-3 { bottom: 20%; left: 1%; width: 120px; transform: rotate(-30deg); }
+.leaf-4 { bottom: 5%; right: 3%; width: 140px; transform: rotate(25deg); }
+
+@media (max-width: 768px) {
+  .leaf-bg { opacity: 0.5; }
+  .leaf-1 { width: 120px; }
+  .leaf-2 { width: 100px; }
+  .leaf-3, .leaf-4 { display: none; }
+}
 
 .hero-leaf-left,
 .hero-leaf-right {
@@ -703,8 +712,8 @@ em {
   top: 50%;
   transform: translateY(-50%);
 }
-.hero-leaf-left { left: 2%; }
-.hero-leaf-right { right: 2%; transform: translateY(-50%) scaleX(-1); }
+.hero-leaf-left { left: 3%; width: 240px; }
+.hero-leaf-right { right: 3%; width: 240px; transform: translateY(-50%) scaleX(-1); }
 
 @media (max-width: 1200px) {
   .hero-leaf-left, .hero-leaf-right { display: none; }
